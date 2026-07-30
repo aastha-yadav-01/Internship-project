@@ -1,0 +1,82 @@
+/* Premium design tokens */
+:root {
+  /* Brand palette — violet/indigo */
+  --color-brand-50:  #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+
+  /* Semantic */
+  --color-brand:          var(--color-brand-600);
+  --color-brand-hover:    var(--color-brand-700);
+  --color-brand-disabled: #a5b4fc;
+  --color-focus-ring:     var(--color-brand-400);
+
+  /* Background — deep dark */
+  --color-bg:        #0d0f1a;
+  --color-bg-2:      #111827;
+  --color-surface:   rgba(255, 255, 255, 0.04);
+  --color-surface-2: rgba(255, 255, 255, 0.07);
+  --color-surface-3: rgba(255, 255, 255, 0.10);
+
+  /* Borders */
+  --color-border:       rgba(255, 255, 255, 0.10);
+  --color-border-input: rgba(255, 255, 255, 0.15);
+  --color-border-focus: var(--color-brand-500);
+
+  /* Text */
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted:   #64748b;
+  --color-text-error:   #f87171;
+  --color-text-success: #34d399;
+
+  /* Glow / accent */
+  --glow-brand: 0 0 24px rgba(99, 102, 241, 0.4);
+  --glow-error: 0 0 20px rgba(248, 113, 113, 0.25);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs:   0.75rem;
+  --font-size-sm:   0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg:   1.125rem;
+  --font-size-xl:   1.375rem;
+  --font-size-2xl:  1.75rem;
+  --font-weight-normal:   400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+  --line-height-tight:  1.25;
+  --line-height-normal: 1.6;
+
+  /* Border radius */
+  --radius-sm:  0.375rem;
+  --radius-md:  0.625rem;
+  --radius-lg:  1rem;
+  --radius-xl:  1.25rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:   0 1px 3px rgb(0 0 0 / 0.4);
+  --shadow-card: 0 8px 32px rgb(0 0 0 / 0.5), 0 0 0 1px rgba(255,255,255,0.06);
+  --shadow-lg:   0 24px 64px rgb(0 0 0 / 0.6);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}

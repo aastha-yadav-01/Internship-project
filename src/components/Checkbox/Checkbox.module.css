@@ -1,0 +1,102 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-2);
+  cursor: pointer;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.row:has(.checkbox:checked) {
+  border-color: rgba(99,102,241,0.4);
+  background: rgba(99,102,241,0.07);
+}
+
+.row:hover {
+  background: var(--color-surface-3);
+  border-color: rgba(255,255,255,0.18);
+}
+
+/* Custom checkbox */
+.checkbox {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.125rem;
+  border: 1.5px solid var(--color-border-input);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  cursor: pointer;
+  appearance: none;
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+  display: grid;
+  place-content: center;
+}
+
+.checkbox::before {
+  content: '';
+  width: 0.55rem;
+  height: 0.55rem;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  background-color: #ffffff;
+  transform: scale(0);
+  transition: transform var(--transition-fast);
+}
+
+.checkbox:checked {
+  background: linear-gradient(135deg, var(--color-brand-500), var(--color-brand-700));
+  border-color: var(--color-brand-500);
+  box-shadow: 0 0 10px rgba(99,102,241,0.4);
+}
+
+.checkbox:checked::before {
+  transform: scale(1);
+}
+
+.checkbox:focus {
+  border-color: var(--color-brand-500);
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+  outline: none;
+}
+
+.labelGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  line-height: var(--line-height-tight);
+}
+
+.description {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.error {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-error);
+  font-weight: var(--font-weight-medium);
+  padding-left: calc(1.125rem + var(--space-3));
+}
