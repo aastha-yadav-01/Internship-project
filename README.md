@@ -25,8 +25,8 @@ This is my capstone project for the AI-assisted development track. Details on th
 ### Installation
 
 ```bash
-git clone <this-repo-url>
-cd <repo-name>
+git clone https://github.com/aastha-yadav-01/Internship-project.git
+cd Internship-project
 npm install
 ```
 

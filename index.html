@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="src/settings.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="settings">
+        <header>
+          <h1>Settings</h1>
+          <p>Update your profile and preferences.</p>
+        </header>
+
+        <form id="settings-form">
+          <fieldset>
+            <legend>Profile</legend>
+
+            <label>
+              Display name
+              <input type="text" name="displayName" placeholder="Your name" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <label>
+              Theme
+              <select name="theme">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="system" selected>System</option>
+              </select>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="emailNotifications" checked />
+              Email notifications
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="weeklyDigest" />
+              Weekly digest
+            </label>
+          </fieldset>
+
+          <div class="actions">
+            <button type="submit">Save settings</button>
+            <p id="status" class="status" hidden role="status"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="src/settings.js"></script>
+  </body>
+</html>
