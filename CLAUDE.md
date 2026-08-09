@@ -11,10 +11,9 @@ Capstone project for the AI-assisted development track. Scope and product descri
 - **Language:** JavaScript / TypeScript
 - **Runtime:** Node.js (LTS)
 - **Package manager:** npm
-- **Frontend:** TBD
-- **Backend:** TBD
-- **Database:** TBD
-- **Testing:** TBD
+- **Frontend:** React + Vite
+- **Validation:** React Hook Form + Zod
+- **Testing:** Vitest + React Testing Library
 
 ## Conventions
 
@@ -35,7 +34,7 @@ This repo uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.
 
 ### File Structure
 - Keep source code in `src/`.
-- Keep tests colocated with source files or in a mirrored `tests/` directory (TBD).
+- Keep tests colocated with source files or in a mirrored `tests/` directory.
 
 ## Commands
 
@@ -49,3 +48,9 @@ This repo uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.
 - Ask before making large structural changes.
 - Favor readability over cleverness.
 - When adding a new dependency, briefly explain why it's needed.
+
+## Learned Project Rules
+
+1. **Form Validation Mode:** Always use `mode: 'onTouched'` in React Hook Form when integrating Zod resolvers to ensure fields validate on initial blur as well as change events, ensuring proper `aria-invalid` state sync.
+2. **Accessibility Standards:** Form primitives (`Input`, `Select`, `Checkbox`) must include explicit `htmlFor`/`id` linking, `aria-invalid` state binding, and dynamic `aria-describedby` references for inline error containers (`role="alert"`).
+3. **Automated Verification Loop:** Co-locate unit and integration tests (Vitest + React Testing Library) for all new features and verify a 100% pass rate before declaring completion.
