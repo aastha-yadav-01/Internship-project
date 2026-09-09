@@ -1,0 +1,48 @@
+.home-view {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem 4rem;
+}
+
+.home-view__intro {
+  max-width: 640px;
+  margin-bottom: 2.25rem;
+}
+
+.home-view__intro h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #f3eee4;
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.home-view__intro p {
+  font-family: "Work Sans", sans-serif;
+  color: #a89d8c;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.home-view__status {
+  font-family: "Work Sans", sans-serif;
+  color: #a89d8c;
+  margin-bottom: 1.5rem;
+}
+
+.home-view__status--error {
+  color: #e4572e;
+}
+
+.home-view__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .home-view {
+    padding: 1.5rem 1.25rem 3rem;
+  }
+}

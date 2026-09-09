@@ -1,0 +1,96 @@
+.auth-view {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.auth-view__card {
+  width: 100%;
+  max-width: 380px;
+  background: #24201b;
+  border: 1px solid #38322b;
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.auth-view__card h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f3eee4;
+  margin: 0;
+}
+
+.auth-view__subtitle {
+  font-family: "Work Sans", sans-serif;
+  color: #a89d8c;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem;
+}
+
+.auth-view__card label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  color: #cfc6b8;
+}
+
+.auth-view__card input {
+  padding: 0.6rem 0.75rem;
+  background: #1b1815;
+  border: 1px solid #4a4238;
+  color: #f3eee4;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.auth-view__card input:focus {
+  border-color: #e4572e;
+}
+
+.auth-view__card button[type="submit"] {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  background: #e4572e;
+  color: #1b1815;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.auth-view__card button[type="submit"]:hover {
+  background: #f06a3f;
+}
+
+.auth-view__card button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.auth-view__toggle {
+  background: none;
+  border: none;
+  color: #a89d8c;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0.25rem 0;
+}
+
+.auth-view__error {
+  color: #e4572e;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.85rem;
+  margin: 0;
+}
